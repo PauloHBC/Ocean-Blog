@@ -23,3 +23,6 @@ posts = [
 def index():
     return render_template("index.html", posts=posts)
 
+@app.route('/login')
+def Login():
+    return render_template("login.html")
